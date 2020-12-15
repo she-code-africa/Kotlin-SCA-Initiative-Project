@@ -1,65 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/main_bg"
-        android:tint="#9F000000" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/work_sans_bold"
         android:gravity="center"
-        android:orientation="vertical">
+        android:text="Level Up!"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:contentDescription="@string/sca_logo_description"
-            android:scaleType="centerCrop"
-            android:src="@drawable/sca_icon" />
-
-        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/work_sans_extrabold"
-            android:gravity="center"
-            android:text="@string/track_name"
-            android:textColor="@android:color/white"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ribbon" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="@dimen/twenty_dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/open_sans_bold"
-            android:gravity="center"
-            android:text="@string/welcome_message"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="14sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/badge" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2" />
-    </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/work_sans_bold"
+        android:text="Level 2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="Congratulations!!!\n\n On making it into the programme\nKindly clear up this screen to start your task" />
 
 
-</RelativeLayout>
+</LinearLayout>
