@@ -14,7 +14,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/work_sans_bold"
         android:gravity="center"
-        android:text="Level Up!"
+        android:text="Welcome!"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
