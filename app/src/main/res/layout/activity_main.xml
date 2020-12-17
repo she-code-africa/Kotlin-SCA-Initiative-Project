@@ -56,13 +56,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
         android:layout_weight="1"
-        android:textStyle="bold"
-        android:textColor="@android:color/darker_gray"
         android:fontFamily="@font/open_sans_bold"
         android:gravity="center"
-        android:layout_marginHorizontal="20dp"
-        android:text="Congratulations!!!\n\n On making it into the programme\nKindly clear up this screen to start your task" />
+        android:text="Congratulations!!!\n\n On making it this far, just keep the fire burning\nKindly clear up this screen to start your task"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
